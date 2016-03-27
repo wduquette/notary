@@ -10,10 +10,11 @@ package com.wjduquette.notary;
  * @author will
  */
 public enum Key {
-    TITLE("Title"),
-    BODY("Body"),
-    PARENT("Parent");
-
+    /** The note's unique ID. */                ID("ID"),
+    /** The ID of the note's prototype note. */ PROTOTYPE("Prototype"),
+    /** The note's title. */                    TITLE("Title"),
+    /** The note's body text. */                BODY("Body"),
+    /** The note's parent note. */              PARENT("Parent");
 
     private final String name;
     
